@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>activation de bouton</title>
+   </head>
+
+  <body>
+    <div id="commandes">
+    	Utilisez ces boutons pour activer ou désactiver le bouton du bas :<br><br>
+    	<button id="bouton1">Activer</button>
+    	<button id="bouton2">Désactiver</button><br><br>
+    	<hr>
+    </div>
+
+    <div id="action">
+    	Pour voir le texte du dessous, cliquer si vous le pouvez !
+     	<button id="bouton3" autocomplete="off">cliquer </button><br><br>
+    </div> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        // au click sur bouton1, on écrit un trait horizontal et on fait apparaitre le texte, la zone de texte et le bouton submit
+        $('#bouton1').click(function(){ 
+        	$('#bouton3').attr('disabled','true');
+        });
+        $('#bouton2').click(function(){ 
+        	$('#bouton3').attr('disabled','false');
+        });
+        $('#bouton3').click(function(){ 
+        	$('#action').append('Le bouton du bas fonctionne.');
+        });
+
+
+      });
+    </script>
+  </body>
+</html>        	
