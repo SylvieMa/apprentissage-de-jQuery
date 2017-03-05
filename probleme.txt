@@ -1,0 +1,9 @@
+Mon problème est le suivant :
+Le bouton du bas, d'id bouton3, est désactivé quand on clique sur le bouton2 comme prévu.
+Mais quand on clique sur le bouton1 (qui devrait le réactiver), le bouton reste désactivé.
+Quand on commence par cliquer sur le bouton1, le bouton du bas est aussi désactivé, ce qui ne devrait pas être.
+
+J'ai cherché sur le net et j'ai vu tout et son contraire.
+J'ai testé tout ce que j'ai vu mais rien ne fonctionne.
+Si jamais vous avez une idée....
+Un grand merci!
