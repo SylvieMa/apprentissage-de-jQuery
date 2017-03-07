@@ -15,19 +15,21 @@
 
     <div id="action">
     	Pour voir le texte du dessous, cliquer si vous le pouvez !
-     	<button id="bouton3" autocomplete="off">cliquer </button><br><br>
+     	<button id="bouton3" autocomplete="off">cliquer </button><br><br> <!-- autocomplete=off sert sur Mozilla à désactiver une fctionnalité de Firefox qui conserve l'état de désactivation des boutons au fur et à mesure des chargements-->
     </div> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
       $(function() {
-        // au click sur bouton1, on écrit un trait horizontal et on fait apparaitre le texte, la zone de texte et le bouton submit
+        // au click sur bouton1, on active le bouton3 (celui du bas) 
         $('#bouton1').click(function(){ 
         	$('#bouton3').attr('disabled','true');
         });
+        // au click sur bouton2, on désactive le bouton3 (celui du bas) 
         $('#bouton2').click(function(){ 
         	$('#bouton3').attr('disabled','false');
         });
+        // au click sur bouton3, on écrit une ligne pour dire que le bouton fonctionne 
         $('#bouton3').click(function(){ 
         	$('#action').append('Le bouton du bas fonctionne.');
         });
